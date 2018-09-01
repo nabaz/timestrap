@@ -27,17 +27,6 @@ class Command(BaseCommand):
         iterations = kwargs['iterations']
 
         for _ in range(iterations):
-            task_name = (fake
-                         .sentence(nb_words=3, variable_nb_words=True)
-                         .replace('.', '')
-                         .title())
-            Task.objects.create(
-                name=task_name,
-                hourly_rate=Decimal(
-                    '%d.%d' % (randint(1, 200), randint(1, 99)))
-            )
-
-        for _ in range(iterations):
             Client.objects.create(name=fake.company())
 
         for client in Client.objects.iterator():
@@ -55,6 +44,21 @@ class Command(BaseCommand):
                     estimate=estimate,
                     name=project_name
                 )
+
+        for _ in range(iterations):
+            task_name = (fake
+                         .sentence(nb_words=3, variable_nb_words=True)
+                         .replace('.', '')
+                         .title())
+            Task.objects.create(
+                project = Project.objects.first(),
+                name=task_name,
+                hourly_rate=Decimal(
+                    '%d.%d' % (randint(1, 200), randint(1, 99)))
+
+            )
+
+
 
         for _ in range(iterations):
             fake_user = fake.simple_profile(sex=None)

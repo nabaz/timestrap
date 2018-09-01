@@ -81,6 +81,7 @@ class Project(models.Model):
 
 
 class Task(models.Model):
+    project = models.ForeignKey('Project', related_name='task', on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     hourly_rate = models.DecimalField(max_digits=10, decimal_places=2,
                                       blank=True, null=True)
