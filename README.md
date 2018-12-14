@@ -35,7 +35,7 @@ is a production deployment you will want to change these.
 The easiest way to run Timestrap and the only installation that I can actively
 support since I use it myself in production.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/overshard/timestrap)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nabaz/timestrap)
 
 For manual deployments to Heroku, make sure to create two environmental
 variables before pushing using `heroku config:set`:
