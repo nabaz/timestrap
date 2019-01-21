@@ -53,6 +53,17 @@
             </li>
             <li class="nav-item">
               <router-link
+                id="nav-projects"
+                :to="projects"
+                class="nav-link">
+                <icon
+                  :icon="['fas', 'project-diagram']"
+                  class="mr-1"/>
+                Projects
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link
                 id="nav-tasks"
                 :to="tasks"
                 class="nav-link">
