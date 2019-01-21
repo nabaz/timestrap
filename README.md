@@ -1,6 +1,6 @@
 # Timestrap
 
-[![Travis](https://img.shields.io/travis/overshard/timestrap.svg?style=for-the-badge)](https://travis-ci.org/overshard/timestrap) [![Coveralls](https://img.shields.io/coveralls/overshard/timestrap.svg?style=for-the-badge)](https://coveralls.io/github/overshard/timestrap) [![license](https://img.shields.io/github/license/overshard/timestrap.svg?style=for-the-badge)](https://github.com/overshard/timestrap/blob/master/LICENSE.md) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/overshard/timestrap)
+[![Travis](https://img.shields.io/travis/overshard/timestrap.svg?style=for-the-badge)](https://travis-ci.org/overshard/timestrap) [![Coveralls](https://img.shields.io/coveralls/overshard/timestrap.svg?style=for-the-badge)](https://coveralls.io/github/overshard/timestrap) [![license](https://img.shields.io/github/license/overshard/timestrap.svg?style=for-the-badge)](https://github.com/nabaz/timestrap/blob/master/LICENSE.md) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/overshard/timestrap)
 
 Time tracking you can host anywhere. Full export support in
 multiple formats and easily extensible.
@@ -17,7 +17,7 @@ you will not be able to upgrade to 1.0 from early development.
 
 ## Demo
 
-There is a [demo instance of Timestrap](https://timestrap.herokuapp.com/) on
+There is a [demo instance of Timestrap](https://timestrap-nm.herokuapp.com/timesheet/) on
 Heroku that resets every 10 minutes.
 
 
@@ -35,7 +35,7 @@ is a production deployment you will want to change these.
 The easiest way to run Timestrap and the only installation that I can actively
 support since I use it myself in production.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/overshard/timestrap)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nabaz/timestrap)
 
 For manual deployments to Heroku, make sure to create two environmental
 variables before pushing using `heroku config:set`:
@@ -152,7 +152,7 @@ changes to any file allowing for quick modification and review.
 
 Once you've made your changes you can test with `gulp coverage:development` and
 if that is successful and you want to share your changes create a
-[pull request](https://github.com/overshard/timestrap/pulls)!
+[pull request](https://github.com/nabaz/timestrap/pulls)!
 
 ### Development Commands
 

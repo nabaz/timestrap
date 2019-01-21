@@ -9,9 +9,9 @@ services:
       - db:/db-data
   web:
     build: .
-    command: daphne timestrap.asgi:application --port 80 --bind 0.0.0.0 -v2
+    command: daphne timestrap.asgi:application --port 8072 --bind 0.0.0.0 -v2
     ports:
-      - "80:80"
+      - "8072:8072"
     depends_on:
       - db
     environment:
