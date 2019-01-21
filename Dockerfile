@@ -16,8 +16,7 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install pipenv
-RUN pipenv install --three --system
 
 COPY --from=build /build/client/static /app/client/static
 
-RUN python3 manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput

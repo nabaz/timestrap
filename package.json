@@ -2,7 +2,7 @@
   "name": "timestrap",
   "author": "Timestrap's Contributors",
   "description": "Time tracking you can host anywhere. Full export support in multiple formats and easily extensible.",
-  "repository": "https://github.com/overshard/timestrap",
+  "repository": "https://github.com/nabaz/timestrap",
   "keywords": [
     "python",
     "django",
