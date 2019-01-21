@@ -22,11 +22,21 @@
             required >
         </div>
         <div class="form-group">
-          <label>Hourly Rate</label>
+          <label>Project</label>
           <input
             id="task-modal-hourly-rate"
             v-model.number="hourly_rate"
             placeholder="Hourly Rate"
+            type="text"
+            class="form-control form-control-sm"
+            required >
+        </div>
+        <div class="form-group">
+          <label>Hourly Rate</label>
+          <input
+            id="task-modal-project"
+            v-model.number="project"
+            placeholder="Project"
             type="text"
             class="form-control form-control-sm"
             required >
